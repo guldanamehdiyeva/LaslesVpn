@@ -62,15 +62,18 @@ $(".closewindow").click(e =>{
 
 $('.mysignin-form').parsley();
 
+$('.mysignin-form').on('submit', e => {
+    
+    $(".signinform").css("top","-100%");
+    $(".backgroundmenu").css("left","-100%");
+
+})
+
 $(".signin").click(e =>{
     $(".signinform").css("top","50%")
     $(".backgroundmenu").css("left","0")
 })
 
-$(".four-btn").click(e =>{
-    $(".signinform").css("top","-100%")
-    $(".backgroundmenu").css("left","-100%")
-})
 
 $(".closeall").click(e=>{
     $(".signupform").css("top","-100%")
