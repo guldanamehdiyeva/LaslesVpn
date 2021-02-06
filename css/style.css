@@ -1,0 +1,682 @@
+*,*:before, *:after{ box-sizing: border-box; }
+body{
+     margin: 0;
+     font-family: Rubik;
+}
+
+.row{margin: 0;}
+
+/*arrow-up*/
+.arrow-up{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #F53838;
+    box-shadow: 0px 13px 18px rgba(219, 46, 34, 0.164);
+    bottom: 10%;
+    right: 5%;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+}
+.arrow-up i{
+    top: 30%;
+    right: 40%;
+}
+
+
+
+/*heights*/
+.h-400{height: 400px;}
+.h-150{height: 150px;}
+
+
+/*slider*/
+#slider2 .swiper-slide-active {
+    transition: all 400ms ease;
+    border: 2px solid red !important;
+}
+
+#slider2 .swiper-slide{
+ 
+    
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+}
+
+.myslider .swiper-container{margin-left: 395px;}
+
+.next-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: 30%;
+    background-color: #F53838;
+    bottom: 0;
+}
+.swiper-button-next{
+    height: 50px;
+    width: 50px;
+    top: 45%;
+    right: -5px;
+	background-image: url("../img/next-arrow.png");
+	background-repeat: no-repeat;
+    background-position: center;
+    outline: none;
+}
+.swiper-button-next:after{ content: " " }
+.swiper-button-prev:after{ content: " " }
+
+.prev-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: 35%;
+    background-color: #F53838;
+    bottom: 0;
+}
+.swiper-button-prev{
+    height: 50px;
+    width: 50px;
+    top: 45%;
+    left: -5px;
+	background-image: url("../img/prev-arrow.png");
+	background-repeat: no-repeat;
+    background-position: center;
+    outline: none;
+}
+
+
+.swiper-pagination-bullets{
+    width: 15px;
+    height: 15px;
+    background-color: #DDE0E4;
+    border-radius: 50%;
+    margin-left: 20px;
+    transition: all .6s ease;
+    outline: none;
+
+}
+.swiper-pagination-bullets:first-child{margin-left: 0;}
+.swiper-pagination-bullets-active{
+    background-color: #F53838;
+    width: 45px;
+    border-radius: 20px
+}
+.swiper-pagination-bullets:active .swiper-slide{
+    border: 2px solid red;
+}
+
+
+
+
+/*pricing*/
+.box{
+    border: 2px solid #DDDDDD;
+    transition: all .6s ease;
+}
+
+.plus{
+    cursor: pointer;
+    color: #F53838;
+    transition: all .6s ease;
+}
+
+.minus{
+    display: none;
+    cursor: pointer;
+    color: #F53838;
+    transition: all .6s ease;
+}
+
+.plan{
+    display: none;
+    transition: all .6s ease;
+}
+
+.plus1{
+    cursor: pointer;
+    color: #F53838;
+    transition: all .6s ease;
+}
+
+.minus1{
+    display: none;
+    cursor: pointer;
+    color: #F53838;
+    transition: all .6s ease;
+}
+
+.plan1{
+    display: none;
+    transition: all .6s ease;
+}
+
+.plus2{
+    cursor: pointer;
+    color: #F53838;
+    transition: all .6s ease;
+}
+
+.minus2{
+    display: none;
+    cursor: pointer;
+    color: #F53838;
+    transition: all .6s ease;
+}
+
+.plan2{
+    display: none;
+    transition: all .6s ease;
+}
+
+.borderred{transition: all .5s ease;}
+
+
+
+
+/*additional padding and margin-------------*/
+.pt-190{padding-top: 190px;}
+
+
+/*box shadow----------------------------*/
+.box-shadow{box-shadow: 0px 13px 18px rgba(34, 20, 19, 0.164);}
+
+
+/*------header sticky---------------------*/
+.logo span{transition: .6s;}
+.header{transition:all .6s ease ;
+left: 0;
+z-index: 998;}
+.header a{transition: .6s;}
+.header.sticky{
+    background:#ffffff;
+    padding-top:15px;
+    padding-bottom: 15px;
+    box-shadow: 0 0 5px 5px #867c7c;
+    
+    transition: all .6s ease;
+    
+}
+.header.sticky span{color:#F53838;}
+.header.sticky a{color: #F53838;}
+
+.navbar{
+    width: 1150px;
+    margin-right: auto!important;
+    margin-left: auto!important;
+}
+
+
+
+/*menu----------------------------------*/
+.menu{
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background-color: #f53854e0;
+    z-index: 1000;
+    transition: all .8s ease;
+}
+.backgroundmenu{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    background-color: #000000c5;
+    z-index: 999;
+    transition: all .7s ease;
+    transition-delay: .3s;
+}
+
+
+/*colors---------------------------*/
+.color-4F5665{color: #4F5665;}
+.color-F53855{color: #F53855;}
+.color-0B132A{color: #0B132A;}
+.color-AFB5C0{color: #AFB5C0;}
+
+/*bg-colors------------------------------------*/
+.bgcolor-F53838{background-color: #F53838;}
+.bgcolor-white{background-color: white;}
+.bgcolor-F6F6F6{background-color: #fcfcfc;}
+.bgcolor-F8F8F8{background-color: #F8F8F8;}
+
+
+ /*font-weight------------------------*/
+ .fw-400{font-weight: 400;}
+ .fw-600{font-weight: 600;}
+ .fw-500{font-weight: 500;}
+ 
+
+
+/*font-sizes-----------------------*/
+.fs-20{font-size: 20px;}
+.fs-14{font-size: 14px;}
+.fs-35{font-size: 35px;}
+.fs-50{font-size: 50px;}
+.fs-25{font-size: 25px;}
+.fs-16{font-size: 16px;}
+.fs-19{font-size: 19px;}
+
+
+
+/*form--------------------------------*/
+.signupform{
+    width: 30%;
+    background-color: #f53838ce;
+    z-index: 10001;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    top: -100%;
+    transition: all .8s ease;
+}
+
+.signinform{
+    width: 30%;
+    background-color: #f53838ce;
+    z-index: 10001;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    top: -100%;
+    transition: all .8s ease;
+}
+
+input::placeholder{
+    color: #bbb3b4;
+    font-weight: 370;
+}
+
+.form-control:focus{border-color: #0B132A;}
+
+.parsley-error { box-shadow:0 0 5px 5px red; }
+.parsley-errors-list { display: none }
+
+.window{
+    z-index: 10001;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 4px solid #fc7272;
+    transition: all .7s ease;
+    border-radius: 15px;
+    
+}
+
+.closewindow{cursor: pointer;}
+.closeall{cursor: pointer;}
+
+
+
+/*img properties--------------------------*/
+.mylogo{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+.logo{cursor: pointer;}
+
+.bgimg{
+    background-image: url(../img/img1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    z-index: 100;
+}
+
+.icons{
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color:#FFECEC;
+}
+.icons i{color: #F53855;}
+
+.parsley-error { background-color: red; }
+
+
+.light{
+    top: 50%;
+    right: 0;
+}
+.light img{
+    width: 120px;
+    height:120px;
+    object-fit: contain;
+    z-index: -1;
+    animation: move 7s ease infinite ;
+}
+@keyframes move{
+    0%{transform: translateX(0);}
+    50%{transform: translateX(-40%);}
+}
+ 
+.shape1{
+    top: 0;
+    right: 20%;
+    animation: move1 5s ease infinite ;
+    z-index:-1;
+
+}
+@keyframes move1{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-80%);}
+}
+
+.shape2{
+    top: 45%;
+    animation: move2 5s ease infinite ;
+    z-index:-1;
+}
+@keyframes move2{
+    0%{transform: translateX(0);}
+    50%{transform: translateX(-100%);}
+}
+
+.shape3{
+    top: 0;
+    left: -10%;
+    animation: move3 5s ease infinite ;
+    z-index:-1;
+}
+@keyframes move3{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-80%);}
+}
+
+.shape4{
+    right: 10%;
+    bottom: 40%;
+    animation: move4 5s ease infinite ;
+    z-index:-1;
+}
+@keyframes move4{
+    0%{transform: translateX(0);}
+    50%{transform: translateX(-80%);}
+}
+
+.img2{object-fit: contain;}
+
+.of-contain{object-fit: contain;}
+
+.netflix{
+    background-image: url(../img/netflix.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90px;
+    background-position: bottom;
+    transition: all .6s ease;
+    background-size:contain;
+}
+.netflix:hover{
+    cursor: pointer;
+    background-image: url(../img/red-netflix.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90px;
+    background-position: bottom;
+    background-size:contain;
+}
+
+.reddit{
+    background-image: url(../img/reddit.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 75px;
+    background-position: bottom;
+    transition: all .6s ease;
+    background-size:contain;
+}
+.reddit:hover{
+    cursor: pointer;
+    background-image: url(../img/red-reddit.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 75px;
+    background-position: bottom;
+    background-size:contain;
+}
+
+.amazon{
+    background-image: url(../img/amazon.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 160px;
+    background-position: bottom;
+    transition: all .6s ease;
+    background-size:auto;
+}
+.amazon:hover{
+    cursor: pointer;
+    background-image: url(../img/red-amazon.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 160px;
+    background-position: bottom;
+    background-size:auto;
+}
+
+.discord{
+    background-image: url(../img/discord.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70px;
+    background-position: bottom;
+    transition: all .6s ease;
+    background-size:contain;
+}
+.discord:hover{
+    cursor: pointer;
+    background-image: url(../img/red-discord.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70px;
+    background-position: bottom;
+    background-size:contain;
+}
+
+.spotify{
+    background-image: url(../img/spotify.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60px;
+    background-position: bottom;
+    transition: all .6s ease;
+    background-size:contain;
+}
+.spotify:hover{
+    cursor: pointer;
+    background-image: url(../img/red-spotify.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60px;
+    background-position: bottom;
+    background-size:contain;
+}
+
+.facebook{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all .6s ease;
+    color: #F53838;
+    box-shadow: 0px 13px 18px rgba(17, 19, 35, 0.08);
+}
+
+
+.twitter{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: white;
+    color: #F53838;
+    transition: all .6s ease;
+    box-shadow: 0px 13px 18px rgba(17, 19, 35, 0.08);
+}
+
+
+.instagram{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all .6s ease;
+    color: #F53838;
+    box-shadow: 0px 13px 18px rgba(17, 19, 35, 0.08);
+}
+
+
+
+/*buttons--------------------------------------*/
+.first-btn{
+    border: 1px solid #F53855;
+    border-radius: 50px;
+    background-color: transparent;
+    transition:   ease 400ms all;
+}
+
+.first-btn:focus{
+    outline: none;
+}
+
+.second-btn{
+    border-radius: 10px;
+    transition: all .6s ease;
+    box-shadow: 0px 13px 18px rgba(245, 26, 11, 0.205);
+}
+
+.third-btn{transition: all .9s ease;}
+.four-btn{transition: all .9s ease;}
+
+.select-btn{
+    border: 2px solid #F53838;
+    border-radius: 50px;
+    transition: all .6s ease;
+}
+
+.subscribe-btn{
+    border: 2px solid #F53838;
+    border-radius: 10px;
+    box-shadow: 0px 13px 18px rgba(219, 46, 34, 0.164);
+    transition: all .6s ease;
+}
+.subscribe-btn:hover{
+    background-color: #F53838;
+    color: white;
+}
+.subscribe{
+    z-index: 997;
+    border-radius: 10px;
+    left: 21%;
+    bottom: -25%;
+    width: 55%;
+    box-shadow: 0px 13px 18px rgba(17, 19, 35, 0.08);
+}
+
+
+
+
+/*link transition------------------------*/
+.simple-transition a{
+    position: relative;
+    transition: .6s;
+}
+
+.simple-transition a::after{
+    content: "";
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+    transform-origin: bottom right;
+    background-color: #F53855;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.simple-transition a:hover{
+    color: #0B132A;
+    transition-duration: .6s;
+}
+
+.simple-transition a:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+
+
+
+/*hovers-------------------------------*/
+.first-btn:hover{
+    background-color: #F53855;
+    color: white;
+    
+}
+
+.hvr-chngcolor:hover{
+    color: #F53855;
+    transition-duration: .3s;
+}
+
+.fa-align-right{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.second-btn:hover{
+    box-shadow: 0px 9px 0px 0px #ff8698;
+    padding-top: 13px!important;
+}
+
+.third-btn:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.box:hover{
+    border: 2px solid #F53838;
+}
+
+.box:hover .select-btn{
+    color: white;
+    background-color: #F53838;
+}
+
+
+.four-btn:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.facebook:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #F53838;
+}
+
+.twitter:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #F53838;
+}
+
+.instagram:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #F53838;
+}
+
+ul li a:hover{
+    color: #0B132A;
+    font-weight: 500!important;
+}
+
+
+

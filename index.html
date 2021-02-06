@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasles vpn</title>
+
+    <!--data animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--slider-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+
+    <!--icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <!--tooltip-->
+    <link rel="stylesheet" href="css/tipso.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+
+<body>
+
+    <!--media menu-->
+    <div class="position-fixed backgroundmenu"></div>
+
+    <div class="position-fixed menu ">
+        <div class="text-right text-white mr-3 mt-3">
+            <i class="fas fa-times closeicon fs-35"></i>
+        </div>
+        <a href="#about" class="text-capitalize d-block  text-decoration-none fs-sm-18 fs-20 mt-25 mt-5 ml-3 text-white">about</a>
+        <a href="#features" class="text-capitalize d-block  text-decoration-none fs-sm-18 fs-20 mt-25 mt-5 ml-3 text-white">features</a>
+        <a href="#pricing" class="text-capitalize d-block  text-decoration-none fs-sm-18 fs-20 mt-25 mt-5 ml-3 text-white">pricing</a>
+        <a href="#testimonials" class="text-capitalize d-block  text-decoration-none fs-sm-18 fs-20 mt-25 mt-5 ml-3 text-white">testimonials</a>
+        <a href="#help" class="text-capitalize d-block  text-decoration-none fs-sm-18 fs-20 mt-25 mt-5 ml-3 text-white">help</a>
+    </div>
+
+    <!--forms-->
+    <div class="position-fixed signupform">
+        <div class="text-right mr-3 mt-3 mt-6 text-white">
+            <i class="fas fa-times closeall fs-md-11 fs-35"></i>
+        </div>
+
+        <div class="text-center mb-2 mb-6 logo">
+            <img src="img/logo.png" alt="lasleslogo" class="mylogo">
+            <span class="align-middle ml-2 fs-md-11  fs-20 fw-400 text-white">Lasles<span class="fw-600">VPN</span></span>
+        </div>
+        <form  class="px-4 padright-0 mysignup-form" data-parsley-validate >
+            <label for="" class="fs-14 fs-md-11 text-white">First Name</label>
+            <input class="w-100 fs-md-11 form-control border-0 mb-6 mb-3 pl-3 py-3" type="text" minlength="3" required placeholder="What is your name?">
+            <label for="" class="fs-14 fs-md-11 text-white">Last Name</label>
+            <input class="w-100 fs-md-11 form-control  border-0 mb-6 mb-3 pl-3 py-3" type="text" minlength="4" required placeholder="What is your surname?">
+            <label for="" class="fs-14 fs-md-11 text-white">Email</label>
+            <input class="w-100 fs-md-11 form-control border-0 mb-6  mb-3 pl-3 py-3" type="email" name=""  required placeholder="Enter email" id="">
+            <label for="" class="fs-14 fs-md-11 text-white">Password</label>
+            <input class="w-100 fs-md-11 form-control  border-0 mb-6 mb-3 pl-3 py-3" type="password" name="" required minlength="6" pattern="/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8})$/" placeholder="Password" id="">
+            
+            <div class="text-center px-4  pr-75 mt-5 mt-6 mb-6 mb-4">
+                <input type="submit" value="Create new account" class="fs-md-11 submit border-0 third-btn color-0B132A fs-16 w-100 py-2 px-4 rounded bgcolor-white">
+            </div>
+        </form>
+        
+        
+    </div>
+
+    <div class="position-fixed signinform">
+
+        <div class="text-right mr-3 mt-3  mt-6 text-white">
+            <i class="fas fa-times closeall fs-md-11 fs-35"></i>
+        </div>
+
+        <div class="text-center mb-2  logo">
+            <img src="img/logo.png" alt="lasleslogo" class="mylogo">
+            <span class="align-middle ml-2 fs-20 fs-md-11 fw-400 text-white">Lasles<span class="fw-600">VPN</span></span>
+        </div>
+        
+        <form  class="px-4 padright-0 mysignin-form" data-parsley-validate>
+            <label for="" class="fs-14 fs-md-11 text-white">Email or Username</label>
+            <input class="w-100 fs-md-11 form-control border-0  mb-6 mb-3 pl-3 py-3" type="email" name=""  required placeholder="Enter email or username" id="">
+            <label for="" class="fs-14 fs-md-11 text-white">Password</label>
+            <input class="w-100 fs-md-11 form-control  border-0 mb-6 mb-3 pl-3 py-3" type="password" name="" required minlength="6" pattern="/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8})$/" placeholder="Password" id="">
+            
+            <div class="text-center px-4  pr-75 mt-6 mt-5 mb-4">
+                <input type="submit" value="Sign in" class="w-100 fs-md-11 submit border-0 four-btn color-0B132A fs-16 py-2 px-4 rounded bgcolor-white">
+            </div>
+        </form>
+        
+        
+    </div>
+
+    <div class="position-fixed text-center bg-white window pt-2 pb-5 ">
+        <div class="text-left ml-3 color-F53855">
+            <i class="fas fa-times closewindow fs-md-11 fs-35"></i>
+        </div>
+        <h2 class="fs-35 fs-sm-15 fs-md-11 color-F53855 px-2 px-md-5">Successfully account created</h2>
+    </div>
+
+    <!--arrow-up-->
+    <div class="position-fixed arrow-up">
+
+            <i class="fas fa-long-arrow-alt-up position-absolute fs-25 color-F53855"></i>
+        
+    </div>
+
+
+    
+    
+
+
+    <!--About-->
+    <div class="position-relative" >
+        <div class="container">
+            <div class="header position-fixed w-100">
+                <div class="row navbar justify-content-between py-4">
+                    <div class="col-5 col-md-3 pl-0 pl-md-3 logo">
+                        <img src="img/logo.png" alt="lasleslogo" class="mylogo">
+                        <span class="align-middle ml-2 fs-sm-10 fs-20 fw-400">Lasles<span class="fw-600">VPN</span></span>
+                    </div>
+                    <div class="col-md-4 col-lg-5 simple-transition d-none pt-2 display-flex justify-content-between ">
+                        <a href="#about" class="text-capitalize  text-decoration-none fs-14 fs-md-11 color-4F5665">about</a>
+                        <a href="#features" class="text-capitalize  text-decoration-none fs-14 fs-md-11 color-4F5665">features</a>
+                        <a href="#pricing" class="text-capitalize  text-decoration-none fs-14 fs-md-11 color-4F5665">pricing</a>
+                        <a href="#testimonials" class="text-capitalize  text-decoration-none fs-14 fs-md-11 color-4F5665">testimonials</a>
+                        <a href="#help" class="text-capitalize  text-decoration-none fs-14 fs-md-11 color-4F5665">help</a>
+                    </div>
+                    <div class="col-5 col-md-3 text-center px-0 text-lg-right pt-md-1">
+                        <a href="#" class="text-decoration-none signin fs-sm-7 text-capitalize hvr-chngcolor fs-md-11 fs-14 fw-500 color-0B132A">sign in</a>
+                        <button class="text-capitalize  fs-sm-7 color-F53855 fs-md-11 fs-14 px-3 ml-1 ml-md-3 py-1 first-btn">sign up</button>
+                    </div>
+                    <div class="col-1 pt-md-1 d-lg-none">
+                        <i class="fas fa-align-right p-0 color-F53855"></i>
+                    </div>
+
+                </div>
+            </div>
+           
+            <div class="row justify-content-between pt-sm-150 pt-190" id="about">
+                    <div class="col-sm-10 col-md-6 position-relative " data-aos="fade-up" data-aos-duration="800"  id="header1">
+                        <h2 class="fs-50 fs-md-30 fs-sm-15 fs-md-15 fw-500 color-0B132A" id="header2">Want anything to be easy with LaslesVPN.</h2>
+                        <p class="fs-16 fs-md-14 fs-sm-10 fs-md-11 color-4F5665" id="header3">Provide a network for all your needs with ease and fun using <span class="color-0B132A">LaslesVPN</span> discover interesting features from us.</p>
+                        <a href="#" class="text-capitalize text-decoration-none mt-5 py-2 px-5 second-btn bgcolor-F53838 fs-16 fs-md-14 fs-sm-7 fs-md-11 text-white font-weight-bold d-inline-block" >get started</a>
+                    </div>
+                    <div class="col-md-5 ml-5 ml-md-0 mt-3 mt-md-0 " data-aos="fade-up"  data-aos-duration="800" id="header4">
+                        <div class="bgimg position-relative"></div>
+                        <div class="position-absolute shape1">
+                            <img src="img/shape1.png" alt="shape1" >
+                        </div>
+                        <div class="position-absolute shape2">
+                            <img src="img/shape2.png" alt="shape2" >
+                        </div>
+                        <div class="position-absolute shape3">
+                            <img src="img/shape3.png" alt="shape3" >
+                        </div>
+                        <div class="position-absolute shape4">
+                            <img src="img/shape4.png" alt="shape4" >
+                        </div>
+                        <div class="light d-none d-md-block position-absolute">
+                            <img src="img/light.png" alt="">
+                        </div>
+                    </div>
+            </div>     
+                
+            
+        </div>
+    </div>
+    <!--About end-->
+
+
+    <!--Counter-->
+    <div>
+        <div class="container pt-md-5">
+            <div class="row counter justify-content-between mt-5 bg-white rounded box-shadow px-5 py-5" data-aos="fade-up" data-aos-duration="1200">
+                <div class="col-lg-3 border-lg-right">
+                    <div class="d-flex">
+                        <div class="d-flex icons align-middle justify-content-center align-items-center">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        
+                        <div class="ml-3">
+                            <div class="d-flex">
+                                <span class="fw-bold fs-25 fs-sm-18 d-block num">90000</span>
+                                <span class="fw-bold fs-25 fs-sm-18 d-inline-block">+</span>
+                            </div>
+                            <span class="fs-20 fs-sm-15 d-block color-4F5665">Users</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-3 mt-lg-0  border-lg-right">
+                    <div class="d-flex justify-content-md-center">
+                        <div class="d-flex icons align-middle justify-content-center align-items-center">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        
+                        <div class="ml-3">
+                            <div class="d-flex">
+                                <span class="fw-bold fs-25 fs-sm-18 d-block num">300</span>
+                                <span class="fw-bold fs-25 fs-sm-18 d-inline-block">+</span>
+                            </div>
+                            <span class="fs-20 fs-sm-15 d-block color-4F5665">Locations</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-3 mt-lg-0 ">
+                    <div class="d-flex justify-content-md-end">
+                        <div class="d-flex icons align-middle justify-content-center align-items-center">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        
+                        <div class="ml-3">
+                            <div class="d-flex">
+                                <span class="fw-bold fs-25 fs-sm-18 d-block num">5000</span>
+                                <span class="fw-bold fs-25 fs-sm-18 d-inline-block">+</span>
+                            </div>
+                            <span class="fs-20 fs-sm-15 d-block color-4F5665">Servers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Counter end-->
+
+    <!--Features-->
+    <div id="features">
+        <div class="container">
+            <div class="row justify-content-between mt-5 py-5">
+                <div class="col-md-5 body1 t-center aos-init aos-animate " data-aos="fade-up" data-aos-duration="800">
+                    <img src="img/img2.png" alt="" class="w-100 h-100 img2">
+                </div>
+                <div class="col-md-5 body2 mt-5 mt-md-0" data-aos="fade-up" data-aos-duration="800">
+                    <h2 class="fw-500 body2 fs-35 fs-md-23 fs-sm-20 fs-md-15 color-0B132A">We Provide Many Features You Can Use</h2>
+                    <p class="fs-16 fs-md-10 body2 fs-sm-10 fs-md-11  color-4F5665">You can explore the features that we provide with fun and have their own functions each feature.</p>
+                    <div class="mt-4">
+                        <img src="img/trueicon.png" alt="" class="">
+                        <span class="fs-14 fs-sm-12 color-4F5665">Powerfull online protection.</span>
+                    </div>
+                    <div class="mt-4">
+                        <img src="img/trueicon.png" alt="" class="">
+                        <span class="fs-14 fs-sm-12 color-4F5665">Internet without borders.</span>
+                    </div>
+                    <div class="mt-4">
+                        <img src="img/trueicon.png" alt="" class="">
+                        <span class="fs-14 fs-sm-12 color-4F5665">Supercharged VPN</span>
+                    </div>
+                    <div class="mt-4">
+                        <img src="img/trueicon.png" alt="" class="">
+                        <span class="fs-14 fs-sm-12 color-4F5665">No specific time limits.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Features end-->
+
+    <!--Pricing and Testimonials-->
+    <div class="bgcolor-F6F6F6">
+        <div class="container">
+            <div class="row pt-5 pb-3 justify-content-center" data-aos="fade-up" data-aos-duration="800" id="pricing">
+                <div class="col-10  text-center" id="body3">
+                    <h2 class="fs-35 fs-md-23 fs-sm-20 fw-500 color-0B132A">Choose Your Plan</h2>
+                    <p class="fs-16 fs-md-14 fs-sm-10 color-4F5665 mt-4">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+                </div>
+            </div>
+
+            <div class="row pb-3 py-lg-5 justify-content-center justify-content-lg-between" >
+                <div class="col-10 col-md-7 col-lg-3 box bg-white borderred  py-5 px-xl-4 rounded" data-aos="fade-up" data-aos-duration="800">
+                    <div>
+                        <div class="text-center">
+                        <img src="img/box.png" alt="box">
+                        <div class="mt-5">
+                            <span class="fs-16  color-0B132A">Free Plan <span class="plus fw-600 ">+</span><span class=" minus  fw-600">-</span></span>
+                        </div>
+                    </div>
+
+                    <div class="plan text-center text-lg-left">
+                        <div class="mt-4">
+                            <img src="img/greenicon.png" alt="">
+                            <span class="fs-14 fs-sm-10 color-4F5665">Unlimited Bandwitch</span>
+                        </div>
+                        <div class="mt-4">
+                            <img src="img/greenicon.png" alt="">
+                            <span class="fs-14 fs-sm-10 color-4F5665">Encrypted Connection</span>
+                        </div>
+                        <div class="mt-4">
+                            <img src="img/greenicon.png" alt="">
+                            <span class="fs-14 fs-sm-10 color-4F5665">No Traffic Logs</span>
+                        </div>
+                        <div class="mt-4">
+                            <img src="img/greenicon.png" alt="">
+                            <span class="fs-14 fs-sm-10 color-4F5665">Works on All Devices</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center pt-5  ">
+                        <span class="fs-25 fs-sm-15 fw-500 d-block">Free</span>
+                        <a href="#" class="text-decoration-none fs-sm-10 mt-3 fs-16 d-inline-block color-F53855 py-1 px-5 select-btn ">Select</a>
+                    </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-10 col-md-7 col-lg-3 box bg-white borderred1 mt-5 mt-lg-0  py-5 px-xl-4 rounded" data-aos="fade-up" data-aos-duration="950">
+                    <div>
+                        <div class="text-center">
+                            <img src="img/box.png" alt="box">
+                            <div class="mt-5">
+                                <span class="fs-16 color-0B132A">Standart Plan <span class=" plus1 fw-600 ">+</span><span class=" minus1 fw-600">-</span></span>
+                            </div>
+                        </div>
+    
+                        <div class="plan1 text-center text-lg-left  ">
+                            <div class="mt-4">
+                                <img src="img/greenicon.png" alt="">
+                                <span class="fs-14 fs-sm-10 color-4F5665">Unlimited Bandwitch</span>
+                            </div>
+                            <div class="mt-4">
+                                <img src="img/greenicon.png" alt="">
+                                <span class="fs-14 fs-sm-10 color-4F5665">Encrypted Connection</span>
+                            </div>
+                            <div class="mt-4">
+                                <img src="img/greenicon.png" alt="">
+                                <span class="fs-14 fs-sm-10 color-4F5665">Yes Traffic Logs</span>
+                            </div>
+                            <div class="mt-4">
+                                <img src="img/greenicon.png" alt="">
+                                <span class="fs-14 fs-sm-10 color-4F5665">Works on All Devices</span>
+                            </div>
+                            <div class="mt-4">
+                                <img src="img/greenicon.png" alt="">
+                                <span class="fs-14 fs-sm-10 color-4F5665">Connect Anyware</span>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center pt-5">
+                            <span class="fs-25 fs-sm-15 fw-500 d-block">$9 <span class="font-weight-light color-4F5665">/ mo</span></span>
+                            <a href="#" class="text-decoration-none mt-3 fs-sm-12 fs-16 d-inline-block color-F53855 py-1 px-5 select-btn select-btn1">Select</a>
+                        </div>
+    
+                    </div>
+                </div>
+                
+
+                <div class="col-10 col-md-7 col-lg-3 box bg-white borderred2 mt-5 mt-lg-0 py-5 px-xl-4 rounded" data-aos="fade-up" data-aos-duration="1050">
+                    <div>
+                        <div class="text-center">
+                            <img src="img/box.png" alt="box">
+                            <div class="mt-5">
+                                <span class="fs-16 color-0B132A">Premium Plan <span class="plus2 fw-600 ">+</span><span class=" minus2  fw-600">-</span></span>
+                            </div>
+                        </div>
+    
+                        <div class="plan2 text-center text-lg-left ">
+                            <div class="mt-4">
+                                <img src="img/greenicon.png" alt="">
+                                <span class="fs-14 fs-sm-10 color-4F5665">Unlimited Bandwitch</span>
+                            </div>
+                            <div class="mt-4">
+                                <img src="img/greenicon.png" alt="">
+                                <span class="fs-14 fs-sm-10 color-4F5665">Encrypted Connection</span>
+                            </div>
+                            <div class="mt-4">
+                                <img src="img/greenicon.png" alt="">
+                                <span class="fs-14 fs-sm-10 color-4F5665">Yes Traffic Logs</span>
+                            </div>
+                            <div class="mt-4">
+                                <img src="img/greenicon.png" alt="">
+                                <span class="fs-14 fs-sm-10 color-4F5665">Works on All Devices</span>
+                            </div>
+                            <div class="mt-4">
+                                <img src="img/greenicon.png" alt="">
+                                <span class="fs-14 fs-sm-10 color-4F5665">Connect Anyware</span>
+                            </div>
+                            <div class="mt-4">
+                                <img src="img/greenicon.png" alt="">
+                                <span class="fs-14 fs-sm-10 color-4F5665">Get New Features</span>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center pt-5 ">
+                            <span class="fs-25 fs-sm-15 fw-500 d-block">$12 <span class="font-weight-light color-4F5665">/ mo</span></span>
+                            <a href="#" class="text-decoration-none mt-3 fs-sm-12 fs-16 d-inline-block color-F53855 py-1 px-5 select-btn select-btn2">Select</a>
+                        </div>
+                    </div>
+                </div>    
+
+
+                
+            </div>
+
+            <div class="row mt-5 py-5 justify-content-center" data-aos="fade-up" data-aos-duration="800" id="testimonials">
+                <div class="col-md-10 col-xl-6 text-center">
+                    <h2 class="fs-35 fs-sm-20 fs-md-25 px-5 color-0B132A fw-500">Huge Global Network of Fast VPN</h2>
+                    <p class="fs-16 fs-sm-12 mt-4 color-4F5665">See <span class="color-0B132A fw-500">LaslesVPN</span> everywhere to make it easier for you when you move locations.</p>
+                </div>
+            </div>
+
+            <div class="row py-5" >
+                <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="800">
+                    <img src="img/map.png" alt="map" class="w-100">
+                </div>
+            </div>
+
+            <div class="row py-5 disp-none justify-content-between" data-aos="fade-up" data-aos-duration="800">
+                <div class="col-5 col-md-2 netflix"></div>
+                <div class="col-5 col-md-2 reddit"></div>
+                <div class="col-5 col-md-2 amazon"></div>
+                <div class="col-5 col-md-2 discord"></div>
+                <div class="col-5 col-md-2 spotify"></div>
+            </div>
+
+            <div class="swiper-container d-none h-150 " id="slider" data-aos="fade-up" data-aos-duration="800">
+                <div class="swiper-wrapper">
+                      <div class="swiper-slide netflix  p-40"></div>
+                      <div class="swiper-slide reddit p-40"> </div>
+                      <div class="swiper-slide amazon p-40"></div>
+                      <div class="swiper-slide discord p-40"></div>
+                      <div class="swiper-slide spotify p-40"></div>
+                </div>
+            </div> 
+
+            
+        </div>
+    </div>
+    <!--Pricing and Testimonials end-->
+
+    <!--Help-->
+    <div class="bgcolor-F6F6F6 pb-5 myslider" id="help">
+        <div class="container-fluid mb-5 pb-5 position-relative">
+            <div class="row py-5  justify-content-center" data-aos="fade-up" data-aos-duration="800">
+                <div class="col-md-10 col-xl-6 text-center">
+                    <h2 class="fs-35 fs-md-30 fs-sm-20 color-0B132A fw-500">Trusted by Thousands of Happy Customer</h2>
+                    <p class="fs-16 fs-md-14 fs-sm-10 mt-4 color-4F5665">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
+                </div>
+            </div>
+    
+            <div class="swiper-container py-5 h-400 " id="slider2" data-aos="fade-up" data-aos-duration="800">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide  ml-5">
+                            <div class="row py-3 justify-content-center">
+                                <div class="text-center text-xl-left px-4">
+                                <img src="img/customer1.png" alt="customer" class="align-top">
+                                <div class="ml-md-3 mt-4 mt-md-0 d-md-inline-block">
+                                    <p class="fs-19 fs-sm-13 fs-sm-10 my-0 color-0B132A fw-500">Viezh Robert</p>
+                                    <p class="fs-14 fs-12 fs-sm-7 my-0 color-4F5665">Warsaw, Poland</p>
+                                </div>
+                                <div class="d-md-inline-block text-center text-md-right ">
+                                    <span class="fs-16 fs-sm-12 ml-md-5 color-0B132A">4.5</span>
+                                    <img src="img/staricon.png" alt="">
+                                </div>
+
+                                <p class="fs-16 fs-12 fs-sm-7 color-0B132A mt-4 ">“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+                                </div>
+                                
+                            </div>
+                        
+                            
+                    </div>
+                    <div class="swiper-slide ml-5">
+                        <div class="row py-3 justify-content-center">
+                            <div class="text-center text-xl-left px-4">
+                              <img src="img/customer2.png" alt="customer" class="align-top">
+                              <div class="ml-md-3 mt-4 mt-md-0 d-inline-block">
+                                  <p class="fs-19 fs-sm-13 fs-sm-10 my-0 color-0B132A fw-500">Yessica Christy</p>
+                                  <p class="fs-14 fs-12 fs-sm-7 my-0 color-4F5665">Shanxi, China</p>
+                              </div>
+                              <div class="d-md-inline-block text-center text-md-right ">
+                                  <span class="fs-16 fs-sm-12 ml-md-5  color-0B132A">4.5</span>
+                                  <img src="img/staricon.png" alt="">
+                              </div>
+
+                              <p class="fs-16 fs-12 fs-sm-7  color-0B132A mt-4 ">“I like it because I like to travel far and still can connect with high speed.”.</p>
+                            </div>
+                            
+                        </div>
+                      
+                       
+                    </div>
+                    <div class="swiper-slide ml-5">
+                        <div class="row py-3 justify-content-center">
+                            <div class="text-center text-xl-left px-4">
+                            <img src="img/customer3.png" alt="customer" class="align-top">
+                            <div class="ml-md-3 mt-4 mt-md-0 d-inline-block">
+                                <p class="fs-19 fs-sm-13 fs-sm-10 my-0 color-0B132A fw-500">Kim Young Jou</p>
+                                <p class="fs-14 fs-12 fs-sm-7 my-0 color-4F5665">Seoul, South Korea</p>
+                            </div>
+                            <div class="d-md-inline-block text-center text-md-right ">
+                                <span class="fs-16 fs-sm-12 ml-md-5 color-0B132A">4.5</span>
+                                <img src="img/staricon.png" alt="">
+                            </div>
+
+                            <p class="fs-16 fs-12 fs-sm-7  color-0B132A mt-4 ">“This is very unusual for my business that currently requires a virtual private network that has high security.”.</p>
+                            </div>
+                            
+                        </div>
+                    
+                    
+                    </div>
+                    <div class="swiper-slide ml-5">
+                        <div class="row py-3 justify-content-center">
+                            <div class="text-center text-xl-left px-4">
+                              <img src="img/customer2.png" alt="customer" class="align-top">
+                              <div class="ml-md-3 mt-4 mt-md-0 d-inline-block">
+                                  <p class="fs-19 fs-sm-13 fs-sm-10 my-0 color-0B132A fw-500">Yessica Christy</p>
+                                  <p class="fs-14 fs-12 fs-sm-7 my-0 color-4F5665">Shanxi, China</p>
+                              </div>
+                              <div class="d-md-inline-block text-center text-md-right ">
+                                  <span class="fs-16 fs-sm-12  ml-md-5 color-0B132A">4.5</span>
+                                  <img src="img/staricon.png" alt="">
+                              </div>
+
+                              <p class="fs-16 fs-12 fs-sm-7 color-0B132A mt-4 ">“I like it because I like to travel far and still can connect with high speed.”.</p>
+                            </div>
+                            
+                        </div>
+                      
+                       
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-md-start justify-content-center bg-transparent ml-0  swiper-pagination"></div>
+                <div class="d-md-flex d-none  position-absolute justify-content-center align-items-center next-btn">
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="d-md-flex d-none  position-absolute justify-content-center align-items-center prev-btn">
+                    <div class="swiper-button-prev"></div>
+                </div>
+                
+                
+            </div> 
+
+            <div class="position-absolute bgcolor-white subscribe " data-aos="fade-up" data-aos-duration="800">
+                <div class="row justify-content-between  py-4 px-4">
+                    <div class="col-md-7 text-center text-md-left col-xl-5">
+                        <h2 class="fs-35 fs-md-23 fs-sm-15 fs-sm-13 color-0B132A fw-500">Subscribe Now for Get Special Features!</h2>
+                        <p class="fs-16 fs-md-10 fs-sm-10 fs-12 color-4F5665 font-weight-light">Let's subscribe with us and find the fun.</p>
+                    </div>
+                    <div class="col-md-5 text-center text-md-right col-xl-4 pt-3 pt-xl-5">
+                        <a href="#" class=" text-decoration-none color-F53855 d-inline-block py-2 px-5 fs-sm-10 fs-14 fs-12 subscribe-btn">Subscribe now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+     <!--Help end-->
+
+    
+     <!--Page end-->
+    <div class="bgcolor-F8F8F8 pt-5 ">
+        <div class="container pt-5 ">
+            
+
+            <div class="row justify-content-center justify-content-md-between mt-4 py-5">
+                <div class="col-10 col-lg-4 text-center text-md-left pl-0 pl-md-3" data-aos="fade-up" data-aos-duration="800">
+                    <img src="img/logo.png" alt="lasleslogo" class="mylogo">
+                    <span class="align-middle ml-2 fs-sm-15 fs-20 fw-400">Lasles<span class="fw-600">VPN</span></span>
+                    <p class="fs-16 fs-sm-12 mt-4 color-4F5665"><span class="fw-500 color-0B132A">LaslesVPN</span> is a private virtual network that has unique features and has high security.</p>
+                    <div class="d-flex justify-content-center justify-content-md-start mt-5 ">
+                        <a href="https://www.facebook.com/" target="blank" class="facebook text-decoration-none   d-flex justify-content-center align-items-center ">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="blank" class="twitter text-decoration-none  ml-4 d-flex justify-content-center align-items-center ">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/"  target="blank" class="instagram text-decoration-none  ml-4 d-flex justify-content-center align-items-center ">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <span class="fs-16 mt-5 d-none d-lg-inline-block color-AFB5C0 font-weight-light">©2020LaslesVPN</span>
+                </div>
+                <div class="col-lg-6 pl-0 mt-5 mt-lg-0">
+                    <div class="row justify-content-between">
+                        <div class="col-md-3 pb-3 pb-md-0 border-bot border-md-0 text-center text-md-left" data-aos="fade-up" data-aos-duration="800">
+                            <ul class="list-unstyled">
+                                <li class="fs-19 fs-sm-15 fw-500 color-0B132A">Product</li>
+                                <li><a href="#" class="text-decoration-none text-capitalize mt-4 d-inline-block font-weight-light color-4F5665 fs-16 ">download</a></li>
+                                <li><a href="#" class="text-decoration-none text-capitalize mt-4 d-inline-block font-weight-light color-4F5665 fs-16 ">pricing</a></li>
+                                <li><a href="#" class="text-decoration-none text-capitalize mt-4 d-inline-block font-weight-light color-4F5665 fs-16 ">locations</a></li>
+                                <li><a href="#" class="text-decoration-none text-capitalize mt-4 d-inline-block font-weight-light color-4F5665 fs-16 ">server</a></li>
+                                <li><a href="#" class="text-decoration-none text-capitalize mt-4 d-inline-block font-weight-light color-4F5665 fs-16 ">countries</a></li>
+                                <li><a href="#" class="text-decoration-none text-capitalize mt-4 d-inline-block font-weight-light color-4F5665 fs-16 ">blog</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 pb-3 pb-md-0 mt-5 mt-md-0 border-bot text-center text-md-left" data-aos="fade-up" data-aos-duration="950">
+                            <ul class="list-unstyled">
+                                <li class="fs-19 fs-sm-15 fw-500 color-0B132A">Engage</li>
+                                <li><a href="#" class="text-decoration-none text-capitalize mt-4 d-inline-block font-weight-light color-4F5665 fs-16 ">laslesVPN ?</a></li>
+                                <li><a href="#" class="text-decoration-none text-capitalize mt-4 d-inline-block font-weight-light color-4F5665 fs-16 ">faq</a></li>
+                                <li><a href="#" class="text-decoration-none text-capitalize mt-4 d-inline-block font-weight-light color-4F5665 fs-16 ">tutorials</a></li>
+                                <li><a href="#" class="text-decoration-none text-capitalize mt-4 d-inline-block font-weight-light color-4F5665 fs-16 ">about us</a></li>
+                                <li><a href="#" class="text-decoration-none text-capitalize mt-4 d-inline-block font-weight-light color-4F5665 fs-16 ">privacy policy</a></li>
+                                <li><a href="#" class="text-decoration-none                 mt-4 d-inline-block font-weight-light color-4F5665 fs-16 ">Terms of Service</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 mt-5 mt-md-0 text-center text-md-left" data-aos="fade-up" data-aos-duration="1050">
+                            <ul class="list-unstyled">
+                                <li class="fs-19 fs-sm-15 fw-500 color-0B132A">Earn Money</li>
+                                <li><a href="#" class="text-decoration-none text-capitalize mt-4 d-inline-block font-weight-light color-4F5665 fs-16 ">affiliate</a></li>
+                                <li><a href="#" class="text-decoration-none text-capitalize mt-4 d-inline-block font-weight-light color-4F5665 fs-16 ">become partner</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row d-lg-none pb-5">
+                <div class="col-12 text-center text-md-left">
+                    <span class="fs-16 mt-5 d-inline-block  color-AFB5C0 font-weight-light">©2020LaslesVPN</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <!--Counterup-->
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous"></script>
+    
+    <!--Tooltip-->
+    <script src="js/tipso.js"></script>
+
+    <!--Data animation-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Slider-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--form input parsley-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
